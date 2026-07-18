@@ -89,6 +89,7 @@ ChatGPTBatchCleanup/
 ├── .github/workflows/verify.yml   # GitHub 自动校验
 ├── chatgpt-batch-cleanup.user.js  # 可直接安装的油猴脚本
 ├── content.js                     # 功能逻辑
+├── icons/                         # Chrome 与油猴图标
 ├── LICENSE                        # MIT 开源许可证
 ├── styles.css                     # 界面样式
 ├── manifest.json                  # Chrome 扩展配置

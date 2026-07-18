@@ -89,6 +89,7 @@ ChatGPTBatchCleanup/
 ├── .github/workflows/verify.yml   # GitHub verification workflow
 ├── chatgpt-batch-cleanup.user.js  # Installable userscript
 ├── content.js                     # Core behavior
+├── icons/                         # Chrome and userscript icons
 ├── LICENSE                        # MIT License
 ├── styles.css                     # Interface styles
 ├── manifest.json                  # Chrome extension manifest

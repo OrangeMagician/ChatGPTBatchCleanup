@@ -1,12 +1,14 @@
 // ==UserScript==
 // @name         ChatGPT Batch Cleanup
 // @namespace    https://github.com/OrangeMagician/ChatGPTBatchCleanup
-// @version      1.2.0
+// @version      1.2.1
 // @description  Batch select, archive, or delete ChatGPT conversations.
 // @homepageURL  https://github.com/OrangeMagician/ChatGPTBatchCleanup
 // @supportURL   https://github.com/OrangeMagician/ChatGPTBatchCleanup/issues
 // @downloadURL  https://raw.githubusercontent.com/OrangeMagician/ChatGPTBatchCleanup/main/chatgpt-batch-cleanup.user.js
 // @updateURL    https://raw.githubusercontent.com/OrangeMagician/ChatGPTBatchCleanup/main/chatgpt-batch-cleanup.user.js
+// @icon         https://raw.githubusercontent.com/OrangeMagician/ChatGPTBatchCleanup/main/icons/icon-128.png
+// @icon64       https://raw.githubusercontent.com/OrangeMagician/ChatGPTBatchCleanup/main/icons/icon-128.png
 // @license      MIT
 // @match        https://chatgpt.com/*
 // @match        https://chat.openai.com/*

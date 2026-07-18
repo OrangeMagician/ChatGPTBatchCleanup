@@ -24,3 +24,4 @@ jobs:
           node --check chatgpt-batch-cleanup.user.js
           node scripts/build-userscript.mjs --check
           node -e "JSON.parse(require('node:fs').readFileSync('manifest.json', 'utf8'))"
+          node -e "const fs=require('node:fs');const m=JSON.parse(fs.readFileSync('manifest.json','utf8'));Object.values(m.icons).forEach((file)=>fs.accessSync(file))"

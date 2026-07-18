@@ -10,6 +10,8 @@ const outputPath = path.join(root, "chatgpt-batch-cleanup.user.js");
 const repositoryUrl = "https://github.com/OrangeMagician/ChatGPTBatchCleanup";
 const rawUserscriptUrl =
   "https://raw.githubusercontent.com/OrangeMagician/ChatGPTBatchCleanup/main/chatgpt-batch-cleanup.user.js";
+const rawIconUrl =
+  "https://raw.githubusercontent.com/OrangeMagician/ChatGPTBatchCleanup/main/icons/icon-128.png";
 
 const metadata = `// ==UserScript==
 // @name         ChatGPT Batch Cleanup
@@ -20,6 +22,8 @@ const metadata = `// ==UserScript==
 // @supportURL   ${repositoryUrl}/issues
 // @downloadURL  ${rawUserscriptUrl}
 // @updateURL    ${rawUserscriptUrl}
+// @icon         ${rawIconUrl}
+// @icon64       ${rawIconUrl}
 // @license      MIT
 // @match        https://chatgpt.com/*
 // @match        https://chat.openai.com/*
