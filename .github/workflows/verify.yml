@@ -1,0 +1,26 @@
+name: Verify
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Verify sources and generated userscript
+        run: |
+          node --check content.js
+          node --check scripts/build-userscript.mjs
+          node --check chatgpt-batch-cleanup.user.js
+          node scripts/build-userscript.mjs --check
+          node -e "JSON.parse(require('node:fs').readFileSync('manifest.json', 'utf8'))"

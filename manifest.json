@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "ChatGPT Batch Cleanup",
+  "version": "1.2.0",
+  "description": "Batch select, archive, or delete ChatGPT conversations.",
+  "homepage_url": "https://github.com/OrangeMagician/ChatGPTBatchCleanup",
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://chatgpt.com/*",
+        "https://chat.openai.com/*"
+      ],
+      "js": ["content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}
